@@ -3331,6 +3331,7 @@ rules:
 - DOMAIN-SUFFIX,msftconnecttest.com,🎯 全球直连
 - DOMAIN-SUFFIX,msftncsi.com,🎯 全球直连
 - DOMAIN-SUFFIX,qupu123.com,🎯 全球直连
+- DOMAIN-SUFFIX,cn,🎯 全球直连
 - DOMAIN-SUFFIX,中国,🎯 全球直连
 - DOMAIN-SUFFIX,公司,🎯 全球直连
 - DOMAIN-SUFFIX,网络,🎯 全球直连
@@ -4142,6 +4143,7 @@ rules:
 - IP-CIDR,101.198.128.0/18,🎯 全球直连,no-resolve
 - IP-CIDR,101.198.192.0/19,🎯 全球直连,no-resolve
 - IP-CIDR,101.199.196.0/22,🎯 全球直连,no-resolve
+- GEOIP,CN,🎯 全球直连
 - MATCH,🐟 漏网之鱼
 - DOMAIN-SUFFIX,dyndns.com,🎯 全球直连
 - DOMAIN-SUFFIX,dyndns.org,🎯 全球直连
