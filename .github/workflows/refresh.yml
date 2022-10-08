@@ -26,7 +26,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: From openRunner
         run: |
-          wget https://raw.githubusercontent.com/openRunner/clash-freenode/main/clash.yaml
+          wget https://raw.githubusercontent.com/openRunner/clash-freenode/main/clash.yaml -O clash.yaml
           sed -i 's/port:.7890/mixed-port: 7890/g' ./clash.yaml
           cp clash.yaml clash_cn.yaml
           sed '/,cn,/d' ./clash_cn.yaml | sed '/,CN,/d' > clash.yaml
