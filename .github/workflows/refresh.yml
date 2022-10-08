@@ -30,6 +30,14 @@ jobs:
           sed -i 's/port:.7890/mixed-port: 7890/g' ./clash.yaml
           cp clash.yaml clash_cn.yaml
           sed '/,cn,/d' ./clash_cn.yaml | sed '/,CN,/d' > clash.yaml
+  
+      # Runs a single command using the runners shell
+      - name: From openit
+        run: |
+          wget https://raw.daycat.space/Clash.yaml -O openit.yaml
+          sed -i 's/port:.7890/mixed-port: 7890/g' ./openit.yaml
+          cp openit.yaml openit_cn.yaml
+          sed '/,cn,/d' ./openit_cn.yaml | sed '/,CN,/d' > openit.yaml
 
       # Runs a set of commands using the runners shell
       - name: Git Push
